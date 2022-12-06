@@ -1,0 +1,3 @@
+fix-gcc43-ftbfs.dpatch
+fix-loading.patch
+libtool-workaround.patch

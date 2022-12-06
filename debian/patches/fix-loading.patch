@@ -1,0 +1,44 @@
+#! /bin/sh /usr/share/dpatch/dpatch-run
+##
+## DP: Patch by Cristian Connert  to correct the signature of the init function
+## DP: taken from upstream Bugtracker at
+## DP: http://sourceforge.net/tracker/index.php?func=detail&aid=2608407&group_id=38666&atid=423228
+
+--- a/xosd_plugin/xosdctrl.h	2009-02-17 08:37:49.000000000 +0100
++++ b/xosd_plugin/xosdctrl.h	2009-02-16 16:32:52.000000000 +0100
+@@ -45,9 +45,11 @@
+   /** This creates the osd object */
+   virtual void create(int lines);
+   /** Reinitilize the object */
+-  virtual void init(LConfig& config, bool init = false);
++  virtual void init(LConfig& config, bool init);
++  virtual void init(LConfig& config) {   init(config, false); }
+   /** Reinitilize the object */
+-  virtual void init(bool init = false);
++  virtual void init(bool init);
++  virtual void init() { init(false); }
+ 	/* Cleanup xosd */
+ 	virtual void cleanup();
+ 	/* Age the display and scroll */
+#! /bin/sh /usr/share/dpatch/dpatch-run
+##
+## DP: Patch by Cristian Connert  to correct the signature of the init function
+## DP: taken from upstream Bugtracker at
+## DP: http://sourceforge.net/tracker/index.php?func=detail&aid=2608407&group_id=38666&atid=423228
+
+--- a/xosd_plugin/xosdctrl.h	2009-02-17 08:37:49.000000000 +0100
++++ b/xosd_plugin/xosdctrl.h	2009-02-16 16:32:52.000000000 +0100
+@@ -45,9 +45,11 @@
+   /** This creates the osd object */
+   virtual void create(int lines);
+   /** Reinitilize the object */
+-  virtual void init(LConfig& config, bool init = false);
++  virtual void init(LConfig& config, bool init);
++  virtual void init(LConfig& config) {   init(config, false); }
+   /** Reinitilize the object */
+-  virtual void init(bool init = false);
++  virtual void init(bool init);
++  virtual void init() { init(false); }
+ 	/* Cleanup xosd */
+ 	virtual void cleanup();
+ 	/* Age the display and scroll */

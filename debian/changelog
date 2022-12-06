@@ -1,0 +1,364 @@
+lineak-xosdplugin (1:0.9-8) unstable; urgency=low
+
+  * QA Upload
+  * Work around libtool problems (Closes: #543009)
+  * Add patch to make the plugin load again (LP: #330415) taken from
+    upstream bugtracker
+  * Bump standards version, no changes
+
+ -- Christoph Egger <debian@christoph-egger.org>  Fri, 30 Oct 2009 19:16:17 +0100
+
+lineak-xosdplugin (1:0.9-7) unstable; urgency=low
+
+  * QA upload.
+  * Pass --x-libraries to configure. (Closes: #527502).
+    + Forces something to be in -L on linking.
+  * Add watch file.
+  * Bump Standards Version to 3.8.1. (No changes needed).
+
+ -- Barry deFreese <bdefreese@debian.org>  Mon, 18 May 2009 16:23:28 -0400
+
+lineak-xosdplugin (1:0.9-6) unstable; urgency=low
+
+  * QA Upload
+  * Update fix-gcc43-ftbfs.dpath to fix remaining build problems.  (Closes:
+    #417370)
+  * debian/rules:
+    - Include dpatch.make and make use of its (un)patch targets.
+
+ -- James Vega <jamessan@debian.org>  Mon, 17 Mar 2008 00:35:43 -0400
+
+lineak-xosdplugin (1:0.9-5) unstable; urgency=low
+
+  * QA Upload
+  * Add patch fix-gcc43-ftbfs.dpatch (Closes: #417370)
+    + Added build dep dpatch
+    + Modified rules to use dpatch
+  * Bump Standardsversion to 3.7.3
+  * Remove Homepage from Description and add it correctly.
+  * Fix some lintian warnings/errors:
+    + Move Section: in control to the right place
+    + Don't ignore make clean errors in clean target
+    + s/copyright/Copyright/ in debian/copyright in order to
+      make lintian silent.
+  * Bump debhelper build-depends to 5
+    + set debian/compat to 5 
+
+ -- Patrick Winnertz <winnie@debian.org>  Tue, 12 Feb 2008 11:16:20 +0100
+
+lineak-xosdplugin (1:0.9-4) unstable; urgency=low
+
+  * Orphaning this package, setting maintainer field to
+    packages@qa.debian.org.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Sun, 15 Oct 2006 02:50:46 +0200
+
+lineak-xosdplugin (1:0.9-3) unstable; urgency=low
+
+  * Build-Conflicts with autoconf2.13 as the arm build-daemons have it
+    installed by default
+
+ -- Aurelien Jarno <aurel32@debian.org>  Fri, 21 Jul 2006 11:46:44 +0200
+
+lineak-xosdplugin (1:0.9-2) unstable; urgency=low
+
+  * Fixed a silly test of the autoconf version in the KDE scripts.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Thu, 20 Jul 2006 23:47:51 +0200
+
+lineak-xosdplugin (1:0.9-1) unstable; urgency=low
+
+  * New upstream version.
+  * Bumped Standards-Version to 3.7.2 (no changes).
+
+ -- Aurelien Jarno <aurel32@debian.org>  Sat, 27 May 2006 02:20:18 +0200
+
+lineak-xosdplugin (1:0.8.4-1) unstable; urgency=low
+
+  * New upstream version.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Mon,  9 Jan 2006 20:06:30 +0100
+
+lineak-xosdplugin (1:0.8.3-6) unstable; urgency=low
+
+  * Build-Depends on liblineak-dev instead of lineak-dev.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Wed, 23 Nov 2005 14:50:42 +0100
+
+lineak-xosdplugin (1:0.8.3-5) unstable; urgency=low
+
+  * Use automake-1.7 instead of automake-1.6 (closes: bug#335140). 
+
+ -- Aurelien Jarno <aurel32@debian.org>  Sat, 22 Oct 2005 12:53:11 +0200
+
+lineak-xosdplugin (1:0.8.3-4) unstable; urgency=low
+
+  * C++ transition: build-depends on lineak-dev (>= 1:0.8.3-5).
+  * Bumped Standards-Version to 3.6.2 (no changes).
+
+ -- Aurelien Jarno <aurel32@debian.org>  Thu, 18 Aug 2005 14:50:26 +0200
+
+lineak-xosdplugin (1:0.8.3-3) unstable; urgency=low
+
+  * Build-depends on autoconf/automake1.6. 
+
+ -- Aurelien Jarno <aurel32@debian.org>  Fri, 29 Apr 2005 12:09:32 +0200
+
+lineak-xosdplugin (1:0.8.3-2) unstable; urgency=low
+
+  * Relitoolized to support GNU/kFreeBSD. 
+
+ -- Aurelien Jarno <aurel32@debian.org>  Thu, 28 Apr 2005 12:01:31 +0200
+
+lineak-xosdplugin (1:0.8.3-1) unstable; urgency=low
+
+  * New upstream version. 
+
+ -- Aurelien Jarno <aurel32@debian.org>  Fri, 11 Mar 2005 20:16:20 +0100
+
+lineak-xosdplugin (1:0.8.2-1) unstable; urgency=low
+
+  * New upstream release. 
+
+ -- Aurelien Jarno <aurel32@debian.org>  Thu, 11 Nov 2004 15:16:48 +0100
+
+lineak-xosdplugin (1:0.8.1-1) unstable; urgency=low
+
+  * New upstream release. 
+
+ -- Aurelien Jarno <aurel32@debian.org>  Thu, 28 Oct 2004 13:03:04 +0000
+
+lineak-xosdplugin (1:0.8-2) unstable; urgency=critical
+
+  * Rebuilt against lineak-dev (>= 1:0.8-2).
+  * Urgency set to critical as it fixes a potential RC bug that is also
+    in testing.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Fri,  8 Oct 2004 20:39:18 +0200
+
+lineak-xosdplugin (1:0.8-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Mon, 13 Sep 2004 15:03:09 +0200
+
+lineak-xosdplugin (0.8beta4-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Mon,  2 Aug 2004 14:40:08 +0200
+
+lineak-xosdplugin (0.8beta3-3) unstable; urgency=low
+
+  * Updated the admin/ directory using cvs.kde.org:
+    - Fixes build on arm;
+    - Fixes build on pure 64-bit architectures.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Fri, 11 Jun 2004 17:48:05 +0200
+
+lineak-xosdplugin (0.8beta3-2) unstable; urgency=low
+
+  * This version is now ready for unstable.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Mon,  7 Jun 2004 00:38:15 +0200
+
+lineak-xosdplugin (0.8beta3-1) experimental; urgency=low
+
+  * New upstream beta version. 
+
+ -- Aurelien Jarno <aurel32@debian.org>  Wed, 28 Apr 2004 11:04:01 +0200
+
+lineak-xosdplugin (0.8beta2-2) experimental; urgency=low
+
+  * Added build-dependency on autotools-dev. 
+
+ -- Aurelien Jarno <aurel32@debian.org>  Sat, 17 Apr 2004 15:26:18 +0200
+
+lineak-xosdplugin (0.8beta2-1) experimental; urgency=low
+
+  * Initial release (closes: bug#241152).
+
+ -- Aurelien Jarno <aurel32@debian.org>  Wed, 31 Mar 2004 08:31:57 +0200
+
+lineak-xosdplugin (1:0.9-8) unstable; urgency=low
+
+  * QA Upload
+  * Work around libtool problems (Closes: #543009)
+  * Add patch to make the plugin load again (LP: #330415) taken from
+    upstream bugtracker
+  * Bump standards version, no changes
+
+ -- Christoph Egger <debian@christoph-egger.org>  Fri, 30 Oct 2009 19:16:17 +0100
+
+lineak-xosdplugin (1:0.9-7) unstable; urgency=low
+
+  * QA upload.
+  * Pass --x-libraries to configure. (Closes: #527502).
+    + Forces something to be in -L on linking.
+  * Add watch file.
+  * Bump Standards Version to 3.8.1. (No changes needed).
+
+ -- Barry deFreese <bdefreese@debian.org>  Mon, 18 May 2009 16:23:28 -0400
+
+lineak-xosdplugin (1:0.9-6) unstable; urgency=low
+
+  * QA Upload
+  * Update fix-gcc43-ftbfs.dpath to fix remaining build problems.  (Closes:
+    #417370)
+  * debian/rules:
+    - Include dpatch.make and make use of its (un)patch targets.
+
+ -- James Vega <jamessan@debian.org>  Mon, 17 Mar 2008 00:35:43 -0400
+
+lineak-xosdplugin (1:0.9-5) unstable; urgency=low
+
+  * QA Upload
+  * Add patch fix-gcc43-ftbfs.dpatch (Closes: #417370)
+    + Added build dep dpatch
+    + Modified rules to use dpatch
+  * Bump Standardsversion to 3.7.3
+  * Remove Homepage from Description and add it correctly.
+  * Fix some lintian warnings/errors:
+    + Move Section: in control to the right place
+    + Don't ignore make clean errors in clean target
+    + s/copyright/Copyright/ in debian/copyright in order to
+      make lintian silent.
+  * Bump debhelper build-depends to 5
+    + set debian/compat to 5 
+
+ -- Patrick Winnertz <winnie@debian.org>  Tue, 12 Feb 2008 11:16:20 +0100
+
+lineak-xosdplugin (1:0.9-4) unstable; urgency=low
+
+  * Orphaning this package, setting maintainer field to
+    packages@qa.debian.org.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Sun, 15 Oct 2006 02:50:46 +0200
+
+lineak-xosdplugin (1:0.9-3) unstable; urgency=low
+
+  * Build-Conflicts with autoconf2.13 as the arm build-daemons have it
+    installed by default
+
+ -- Aurelien Jarno <aurel32@debian.org>  Fri, 21 Jul 2006 11:46:44 +0200
+
+lineak-xosdplugin (1:0.9-2) unstable; urgency=low
+
+  * Fixed a silly test of the autoconf version in the KDE scripts.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Thu, 20 Jul 2006 23:47:51 +0200
+
+lineak-xosdplugin (1:0.9-1) unstable; urgency=low
+
+  * New upstream version.
+  * Bumped Standards-Version to 3.7.2 (no changes).
+
+ -- Aurelien Jarno <aurel32@debian.org>  Sat, 27 May 2006 02:20:18 +0200
+
+lineak-xosdplugin (1:0.8.4-1) unstable; urgency=low
+
+  * New upstream version.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Mon,  9 Jan 2006 20:06:30 +0100
+
+lineak-xosdplugin (1:0.8.3-6) unstable; urgency=low
+
+  * Build-Depends on liblineak-dev instead of lineak-dev.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Wed, 23 Nov 2005 14:50:42 +0100
+
+lineak-xosdplugin (1:0.8.3-5) unstable; urgency=low
+
+  * Use automake-1.7 instead of automake-1.6 (closes: bug#335140). 
+
+ -- Aurelien Jarno <aurel32@debian.org>  Sat, 22 Oct 2005 12:53:11 +0200
+
+lineak-xosdplugin (1:0.8.3-4) unstable; urgency=low
+
+  * C++ transition: build-depends on lineak-dev (>= 1:0.8.3-5).
+  * Bumped Standards-Version to 3.6.2 (no changes).
+
+ -- Aurelien Jarno <aurel32@debian.org>  Thu, 18 Aug 2005 14:50:26 +0200
+
+lineak-xosdplugin (1:0.8.3-3) unstable; urgency=low
+
+  * Build-depends on autoconf/automake1.6. 
+
+ -- Aurelien Jarno <aurel32@debian.org>  Fri, 29 Apr 2005 12:09:32 +0200
+
+lineak-xosdplugin (1:0.8.3-2) unstable; urgency=low
+
+  * Relitoolized to support GNU/kFreeBSD. 
+
+ -- Aurelien Jarno <aurel32@debian.org>  Thu, 28 Apr 2005 12:01:31 +0200
+
+lineak-xosdplugin (1:0.8.3-1) unstable; urgency=low
+
+  * New upstream version. 
+
+ -- Aurelien Jarno <aurel32@debian.org>  Fri, 11 Mar 2005 20:16:20 +0100
+
+lineak-xosdplugin (1:0.8.2-1) unstable; urgency=low
+
+  * New upstream release. 
+
+ -- Aurelien Jarno <aurel32@debian.org>  Thu, 11 Nov 2004 15:16:48 +0100
+
+lineak-xosdplugin (1:0.8.1-1) unstable; urgency=low
+
+  * New upstream release. 
+
+ -- Aurelien Jarno <aurel32@debian.org>  Thu, 28 Oct 2004 13:03:04 +0000
+
+lineak-xosdplugin (1:0.8-2) unstable; urgency=critical
+
+  * Rebuilt against lineak-dev (>= 1:0.8-2).
+  * Urgency set to critical as it fixes a potential RC bug that is also
+    in testing.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Fri,  8 Oct 2004 20:39:18 +0200
+
+lineak-xosdplugin (1:0.8-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Mon, 13 Sep 2004 15:03:09 +0200
+
+lineak-xosdplugin (0.8beta4-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Mon,  2 Aug 2004 14:40:08 +0200
+
+lineak-xosdplugin (0.8beta3-3) unstable; urgency=low
+
+  * Updated the admin/ directory using cvs.kde.org:
+    - Fixes build on arm;
+    - Fixes build on pure 64-bit architectures.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Fri, 11 Jun 2004 17:48:05 +0200
+
+lineak-xosdplugin (0.8beta3-2) unstable; urgency=low
+
+  * This version is now ready for unstable.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Mon,  7 Jun 2004 00:38:15 +0200
+
+lineak-xosdplugin (0.8beta3-1) experimental; urgency=low
+
+  * New upstream beta version. 
+
+ -- Aurelien Jarno <aurel32@debian.org>  Wed, 28 Apr 2004 11:04:01 +0200
+
+lineak-xosdplugin (0.8beta2-2) experimental; urgency=low
+
+  * Added build-dependency on autotools-dev. 
+
+ -- Aurelien Jarno <aurel32@debian.org>  Sat, 17 Apr 2004 15:26:18 +0200
+
+lineak-xosdplugin (0.8beta2-1) experimental; urgency=low
+
+  * Initial release (closes: bug#241152).
+
+ -- Aurelien Jarno <aurel32@debian.org>  Wed, 31 Mar 2004 08:31:57 +0200
+
