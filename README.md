@@ -1,8 +1,8 @@
-       lineak_xosdplugin - On Screen Display plugin for the lineakd daemon
+# lineak_xosdplugin - On Screen Display plugin for the lineakd daemon
 
-Requirements
-       The  xosd  plugin requires the following to be added to your configura-
-       tion file: Display_plugin = xosd
+## Requirements
+
+       The  xosd  plugin requires the following to be added to your configuration file: Display_plugin = xosd
 
        The plugin also understands the following config file directives:
 
@@ -15,5 +15,6 @@ Requirements
        Display_voffset - This is a number in pixels to offset the vertical positioning of the display with respect to the Display_align alignment. The default is 50.
        Display_soffset - This is a number in pixels to offset the drop shadowing for the display text. The default is 1.
 
-Known Bugs
+## Known Bugs
+
        If the font that is set cannot be found, then you can problems upon exit. xosd_close may segfault, causing lineakd to segfault. I am trying to minimize this by falling back to the default font if it cannot be set, but you may still have errors.
