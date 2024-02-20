@@ -1,7 +1,7 @@
 # lineak_xosdplugin - On Screen Display plugin for the lineakd daemon
 
-    Status
-    --------
+   ## Status
+    
     This project is here for historical purposes. It no longer builds and this plugin only works on X11. Anyone is welcome to update the build files to something more modern.
 
 ## Requirements
